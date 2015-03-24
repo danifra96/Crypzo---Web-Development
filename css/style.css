@@ -1,0 +1,569 @@
+/* General */
+* {
+  vertical-align: top; }
+
+body {
+  background-color: #f8f8f8 !important;
+  color: #373737;
+  /* Header and navigation */
+  /* Footer */
+  /* Landing */
+  /* Sign up and signup */
+  /* Wallet */
+  /* Send */
+  /* Merchant */
+  /* About us */
+  /* FAQ */ }
+  body h2 {
+    font-family: "Open Sans", sans-serif !important; }
+  body h1, body h2 {
+    font-weight: 800; }
+  body h3, body h4, body h5, body h6 {
+    font-weight: 600; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Raleway", sans-serif;
+    line-height: 125%; }
+  body a {
+    text-decoration: none !important;
+    color: inherit !important;
+    font-family: "Raleway", sans-serif; }
+  body p {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 16px;
+    line-height: 200%; }
+  body ul {
+    list-style: none;
+    padding-left: 0; }
+  body hr {
+    margin: 0;
+    border-color: #ddd; }
+  body .section-block {
+    padding: 90px 0; }
+    body .section-block .container {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      z-index: 1; }
+      body .section-block .container .row {
+        margin: 0 !important;
+        padding: 0 30px; }
+        body .section-block .container .row h1 {
+          font-weight: 900;
+          font-size: 45px;
+          margin: 0; }
+        body .section-block .container .row h2 {
+          margin: 20px 0;
+          font-family: "Open Sans", sans-serif !important; }
+  body .highlight {
+    border: solid rgba(0, 0, 0, 0.075);
+    border-width: 1px 0;
+    background: rgba(33, 126, 170, 0.15); }
+  body .fade-in-up {
+    -webkit-animation: in 0.8s linear 0s 1;
+    -moz-animation: in 0.8s linear 0s 1;
+    -o-animation: in 0.8s linear 0s 1;
+    animation: in 0.8s linear 0s 1; }
+  body .logo {
+    width: 50px;
+    height: 50px; }
+  body .centered {
+    margin: auto; }
+  body .subutton {
+    display: block;
+    text-align: center;
+    padding: 1.3% 2.6%;
+    border-radius: 7.5px;
+    background: #009688;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff !important;
+    transition: all .15s; }
+  body .subutton:hover {
+    background: #008275 !important;
+    transition: all .15s; }
+  body header {
+    background: #217eaa;
+    height: 80px;
+    padding: 17.5px 0 15px;
+    width: 100% !important;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all .15s; }
+    body header nav {
+      height: 100%;
+      padding: 0 20px; }
+      body header nav a {
+        padding: 10px 15px;
+        width: 100%;
+        height: 100%; }
+      body header nav h1 {
+        height: 100%;
+        display: inline-block;
+        margin: 0;
+        font-size: 42px;
+        line-height: 100%;
+        color: #fff; }
+      body header nav ul.mainnav, body header nav ul.secnav {
+        margin: 0 !important;
+        padding: 13px 0;
+        display: inline-block;
+        letter-spacing: 0.75px; }
+        body header nav ul.mainnav li, body header nav ul.secnav li {
+          display: inline-block;
+          font-size: 17px;
+          font-weight: 800;
+          margin: 0;
+          height: 100%; }
+          body header nav ul.mainnav li a, body header nav ul.secnav li a {
+            text-transform: uppercase;
+            position: relative;
+            width: 100%;
+            transition: all .3s; }
+          body header nav ul.mainnav li a:before, body header nav ul.secnav li a:before {
+            width: 0;
+            height: 2px;
+            background: #4fc3f7;
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: -1px;
+            left: 0;
+            transition: all .3s; }
+          body header nav ul.mainnav li a:hover, body header nav ul.secnav li a:hover {
+            transition: all .3s;
+            color: #4fc3f7 !important; }
+          body header nav ul.mainnav li a:hover:before, body header nav ul.secnav li a:hover:before {
+            width: 100%; }
+      body header nav ul.secnav {
+        float: right !important; }
+        body header nav ul.secnav .signup {
+          border: 3px solid white;
+          transition: all .3s;
+          color: #fff !important; }
+        body header nav ul.secnav .signup:before {
+          width: 0 !important; }
+        body header nav ul.secnav .signup:hover {
+          border-color: #4fc3f7;
+          transition: all .3s; }
+  body footer {
+    height: 250px;
+    padding: 40px !important; }
+    body footer .container {
+      height: 100%; }
+      body footer .container .row.footlogo {
+        padding: 80px 0 60px; }
+        body footer .container .row.footlogo div {
+          text-align: center; }
+          body footer .container .row.footlogo div img {
+            margin: 0;
+            width: 140px; }
+          body footer .container .row.footlogo div p {
+            font-family: "Open Sans", sans-serif !important;
+            font-weight: 400; }
+      body footer .container .row.footlinks {
+        text-align: center;
+        font-size: 17px; }
+        body footer .container .row.footlinks a {
+          display: inline-block;
+          padding: 10px 30px !important; }
+        body footer .container .row.footlinks a:hover {
+          color: #009688 !important; }
+  body .intro {
+    background-color: #217eaa;
+    height: 500px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+    body .intro #quote {
+      padding: 180px 0 153px; }
+      body .intro #quote .text h1 {
+        font-weight: 700;
+        color: #fff;
+        font-size: 45px; }
+      body .intro #quote .text p {
+        font-size: 24px;
+        margin: 10px 0;
+        line-height: 150%; }
+  body section#explanations .row {
+    width: 100%;
+    min-height: 65%;
+    text-align: center; }
+    body section#explanations .row h1 {
+      margin-bottom: 60px;
+      color: #222; }
+    body section#explanations .row div {
+      padding: 0 50px; }
+  body section#breaker {
+    background: #009688; }
+    body section#breaker p {
+      text-align: center;
+      margin: 0; }
+  body section#features .row {
+    padding-top: 60px; }
+    body section#features .row h3 {
+      margin-bottom: 24px;
+      color: #009688; }
+    body section#features .row img {
+      width: 100%; }
+  body section#features .row:first-child {
+    padding-top: 0; }
+  body section#startnow {
+    width: 100%;
+    letter-spacing: 0.75px; }
+    body section#startnow h2 {
+      margin: 0;
+      margin-bottom: 40px;
+      text-align: center; }
+    body section#startnow a {
+      width: 180px; }
+  body section#signup, body section#signin {
+    padding: 120px 0 0 0; }
+    body section#signup .container .row a, body section#signin .container .row a {
+      color: #217eaa !important; }
+    body section#signup .container .row a:hover, body section#signin .container .row a:hover {
+      text-decoration: underline; }
+    body section#signup .container .row .account-form, body section#signin .container .row .account-form {
+      padding: 15px 20px;
+      border-width: 1px; }
+      body section#signup .container .row .account-form h2, body section#signin .container .row .account-form h2 {
+        margin: 0 0 20px;
+        font-weight: 600; }
+      body section#signup .container .row .account-form form .formgroup, body section#signin .container .row .account-form form .formgroup {
+        padding: 0 5%; }
+        body section#signup .container .row .account-form form .formgroup input, body section#signin .container .row .account-form form .formgroup input {
+          padding: 10px;
+          border: 1px solid #ccc;
+          outline: none;
+          transition: border-width .3s; }
+        body section#signup .container .row .account-form form .formgroup input:focus, body section#signin .container .row .account-form form .formgroup input:focus {
+          border-bottom-color: #4fc3f7;
+          border-bottom-width: 3px;
+          transition: border-width .3s; }
+        body section#signup .container .row .account-form form .formgroup .control input, body section#signin .container .row .account-form form .formgroup .control input {
+          width: 100% !important;
+          height: 42px; }
+        body section#signup .container .row .account-form form .formgroup .control, body section#signin .container .row .account-form form .formgroup .control {
+          padding: 0 0 20px; }
+        body section#signup .container .row .account-form form .formgroup .firstname, body section#signin .container .row .account-form form .formgroup .firstname {
+          margin-right: 4%; }
+        body section#signup .container .row .account-form form .formgroup .firstname, body section#signup .container .row .account-form form .formgroup .lastname, body section#signin .container .row .account-form form .formgroup .firstname, body section#signin .container .row .account-form form .formgroup .lastname {
+          width: 48% !important;
+          display: inline-block;
+          padding-bottom: 20px; }
+        body section#signup .container .row .account-form form .formgroup .firstname input, body section#signup .container .row .account-form form .formgroup .lastname input, body section#signin .container .row .account-form form .formgroup .firstname input, body section#signin .container .row .account-form form .formgroup .lastname input {
+          width: 100%;
+          height: 42px; }
+        body section#signup .container .row .account-form form .formgroup .terms, body section#signin .container .row .account-form form .formgroup .terms {
+          padding: 2% 0; }
+          body section#signup .container .row .account-form form .formgroup .terms input, body section#signin .container .row .account-form form .formgroup .terms input {
+            margin: 5px 10px !important; }
+          body section#signup .container .row .account-form form .formgroup .terms p, body section#signin .container .row .account-form form .formgroup .terms p {
+            font-size: 12px !important;
+            margin: 0;
+            display: inline-block; }
+        body section#signup .container .row .account-form form .formgroup .actions, body section#signin .container .row .account-form form .formgroup .actions {
+          padding: 5% 10%; }
+          body section#signup .container .row .account-form form .formgroup .actions input, body section#signin .container .row .account-form form .formgroup .actions input {
+            width: 100%;
+            background: #009688; }
+      body section#signup .container .row .account-form form .subutton, body section#signin .container .row .account-form form .subutton {
+        padding: 20px 40px !important; }
+    body section#signup .container .row .account-extra, body section#signin .container .row .account-extra {
+      padding-top: 20px; }
+      body section#signup .container .row .account-extra p, body section#signin .container .row .account-extra p {
+        font-size: 15px !important;
+        display: inline-block;
+        color: #999 !important; }
+  body section#balance {
+    padding-top: 120px; }
+    body section#balance .container {
+      padding: 45px; }
+      body section#balance .container h1 {
+        line-height: 75%;
+        margin: 3.5px 0 0; }
+      body section#balance .container h1, body section#balance .container h3 {
+        display: inline-block; }
+      body section#balance .container .row .balance {
+        text-align: center; }
+      body section#balance .container .coin-head {
+        color: #999;
+        padding-top: 30px;
+        padding-bottom: 30px; }
+        body section#balance .container .coin-head h3 {
+          margin: 20px 0 0;
+          color: #999; }
+      body section#balance .container .coin {
+        padding-top: 20px;
+        min-height: 40px; }
+        body section#balance .container .coin div img {
+          width: 40px;
+          margin-right: 10px; }
+        body section#balance .container .coin div p {
+          margin: 4px 0;
+          font-size: 14px; }
+        body section#balance .container .coin div a {
+          font-size: 20px;
+          background: #4fc3f7;
+          padding: 10% !important; }
+        body section#balance .container .coin div a:hover {
+          background: #1CB4F4 !important; }
+        body section#balance .container .coin div .address {
+          word-break: break-all; }
+  body section#walletgroups {
+    background: #4fc3f7;
+    padding-bottom: 0 !important;
+    margin-bottom: 90px; }
+    body section#walletgroups .row h2 {
+      color: white; }
+    body section#walletgroups .row p a {
+      padding-bottom: 5px;
+      border-bottom: 1px solid;
+      transition: all .15s; }
+    body section#walletgroups .row p a:hover {
+      color: #217eaa !important;
+      border-color: #217eaa !important;
+      transition: all .15s; }
+    body section#walletgroups .row .preview {
+      overflow: hidden; }
+      body section#walletgroups .row .preview img {
+        width: 100%; }
+  body .contrbutton {
+    display: inline-block;
+    border-radius: 7.5px;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  body .refresh img, body .info img {
+    width: 28px !important;
+    margin-right: 0 !important;
+    position: absolute;
+    left: 10%;
+    opacity: .4;
+    transition: all .6s; }
+  body .refresh img {
+    left: 6.5%; }
+  body .refresh:hover img {
+    transform: rotate(360deg); }
+  body section#send {
+    padding-bottom: 0; }
+    body section#send .container {
+      padding: 35px 45px 0; }
+      body section#send .container .row.sendbut {
+        padding-bottom: 30px; }
+      body section#send .container .row .refresh {
+        margin-bottom: 0; }
+      body section#send .container .row .backto {
+        margin-bottom: 20px;
+        font-size: 18px; }
+      body section#send .container .row .backto:before {
+        display: inline-block;
+        content: '<';
+        position: absolute;
+        left: 0;
+        top: -3px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #217eaa; }
+      body section#send .container .row .backto:hover {
+        color: #217eaa !important; }
+      body section#send .container .row .left h2, body section#send .container .row .right h2 {
+        margin: 0 0 22.5px 0; }
+      body section#send .container .row .left {
+        text-align: center; }
+        body section#send .container .row .left a img {
+          width: 30% !important;
+          display: block;
+          margin: auto;
+          margin-bottom: 20px;
+          opacity: .75;
+          transition: all .6s; }
+        body section#send .container .row .left a img:hover {
+          opacity: 1;
+          transition: all .6s; }
+        body section#send .container .row .left .buttons a.qr {
+          margin-right: 40px;
+          font-size: 14px !important;
+          padding: 1.3% 2.6%;
+          display: inline-block; }
+        body section#send .container .row .left .buttons a.subutton {
+          background: #4fc3f7;
+          width: 30%;
+          padding: 3%;
+          display: inline-block;
+          font-size: 18px; }
+        body section#send .container .row .left .buttons a.subutton:hover {
+          background: #1CB4F4 !important; }
+        body section#send .container .row .left p {
+          color: #999;
+          margin: 0 0 45px 0;
+          font-weight: 600; }
+          body section#send .container .row .left p span {
+            color: #333;
+            font-weight: 400; }
+      body section#send .container .row .right h2 {
+        text-align: center; }
+      body section#send .container .row .right .controlgroup {
+        margin-bottom: 40px; }
+        body section#send .container .row .right .controlgroup label {
+          padding: 6px 20px 16px 0;
+          width: 100px;
+          float: left;
+          text-align: right; }
+        body section#send .container .row .right .controlgroup .control {
+          margin-left: 100px; }
+          body section#send .container .row .right .controlgroup .control input {
+            height: 42px; }
+          body section#send .container .row .right .controlgroup .control input, body section#send .container .row .right .controlgroup .control textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: border-width .3s; }
+          body section#send .container .row .right .controlgroup .control input, body section#send .container .row .right .controlgroup .control textarea {
+            width: 70%; }
+          body section#send .container .row .right .controlgroup .control textarea {
+            height: 100px; }
+          body section#send .container .row .right .controlgroup .control input:focus, body section#send .container .row .right .controlgroup .control textarea:focus {
+            border-bottom-color: #4fc3f7;
+            border-bottom-width: 3px;
+            transition: border-width .3s; }
+          body section#send .container .row .right .controlgroup .control a.subutton {
+            width: 40%;
+            padding: 3%; }
+          body section#send .container .row .right .controlgroup .control .verification {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin: 0 10px;
+            background: url(../img/confir.png); }
+          body section#send .container .row .right .controlgroup .control .correct {
+            background-position: 40px 0; }
+          body section#send .container .row .right .controlgroup .control .wrong {
+            background-position: -40px 0; }
+  body section#team #members {
+    width: 100%;
+    height: 80%;
+    background-color: #4fc3f7;
+    border-top: 5px solid rgba(0, 0, 0, 0.2); }
+    body section#team #members div {
+      display: block; }
+      body section#team #members div .person {
+        width: 180px;
+        height: 180px;
+        display: block;
+        margin: auto;
+        border-radius: 50%; }
+      body section#team #members div h2 {
+        font-size: 30px;
+        margin: 20px 0 5px;
+        color: #fff; }
+      body section#team #members div h3 {
+        margin: 0 0 15px;
+        font-weight: 600;
+        text-align: center; }
+      body section#team #members div p {
+        text-align: justify;
+        color: #222;
+        padding: 0 20px;
+        margin-bottom: 5px; }
+        body section#team #members div p b {
+          color: #aaa; }
+  body section#faq .container .row {
+    margin: 0 30px !important;
+    padding: 30px 0;
+    border-bottom: 1px solid #E7E7E7; }
+    body section#faq .container .row div {
+      padding: 0 30px; }
+      body section#faq .container .row div h3 {
+        color: #009688 !important;
+        margin: 0 0 30px; }
+      body section#faq .container .row div p {
+        position: relative; }
+      body section#faq .container .row div p:before {
+        width: 75%;
+        height: 1px;
+        background: #4fc3f7;
+        display: block;
+        position: absolute;
+        top: -15px;
+        content: ''; }
+      body section#faq .container .row div a {
+        color: #009688 !important; }
+
+/* Medias */
+@media (max-width: 1200px) {
+  /* Menu modifiers for mobile */
+  section#explanations .row div {
+    margin-bottom: 60px;
+    padding: 0 !important; }
+
+  section#faq .row {
+    border-bottom: 0 !important;
+    padding: 0 !important; }
+    section#faq .row h1 {
+      margin-bottom: 30px !important; }
+    section#faq .row div {
+      padding: 30px !important; }
+
+  section#balance .addr .coin .coin-logo {
+    width: 80px !important;
+    margin: auto;
+    display: block; }
+  section#balance .addr .coin h1 {
+    display: none;
+    visibility: hidden;
+    width: 0; }
+  section#balance .contrbutton {
+    margin-bottom: 40px; }
+
+  section#send .subutton {
+    margin: 20px 0 0 0; }
+
+  .subutton {
+    padding: 3% 2.6% !important; } }
+@media (max-width: 992px) {
+  section#send .row .left {
+    margin-bottom: 90px; }
+  section#send .row.sendbut {
+    padding-bottom: 45px; }
+    section#send .row.sendbut .backto {
+      font-size: 22px !important;
+      padding-left: 25px; }
+    section#send .row.sendbut .backto:before {
+      top: -12px !important;
+      font-size: 34px !important; }
+
+  section#send h2, section#transactions h2 {
+    font-size: 40px; } }
+/* Animations */
+@-webkit-keyframes in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+@-moz-keyframes in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+@-o-keyframes in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+@keyframes in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+/*# sourceMappingURL=style.css.map */

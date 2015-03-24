@@ -1,0 +1,39 @@
+What it's needed:
+
+MOBILE ADAPTABLE - POSSIBLY RESPONSIVE
+
+- Landing Page:
+	Sections
+		° Catch Phrase
+		° Description of the wallet
+		° Description of the payment processor
+		° Explanation about the company
+
+- Log in and Sign up
+	° Need Facebook/Reddit buttons
+
+- Social Media
+	Ect.
+
+/// Separation ///
+	Personals
+
+- Wallet:
+	° List of coins
+		Balances for each
+		
+		When a coin is clicked, pop up 
+			° QR code and Address 
+			° Sending funds
+			° Sent history
+
+- Personal info
+
+/// Separation ///
+	Merchants
+
+- Merchant:
+	° Create a Merchant
+	° Create a Merchant Profile
+	° Recent payments for Merchant Profile
+
