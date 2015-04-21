@@ -500,9 +500,11 @@ body {
 								border-bottom-width: 3px;
 								transition: border-width .3s;
 							}
-							a.subutton {
-								width: 40%;
-								padding: 3%;
+							button.subutton {
+								width: 40% !important;
+								padding: 3% !important;
+								border: 0px !important;
+								outline: 0px !important;
 							}
 							.verification {
 								width: 10px;

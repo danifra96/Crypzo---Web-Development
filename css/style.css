@@ -428,9 +428,11 @@ body {
             border-bottom-color: #4fc3f7;
             border-bottom-width: 3px;
             transition: border-width .3s; }
-          body section#send .container .row .right .controlgroup .control a.subutton {
-            width: 40%;
-            padding: 3%; }
+          body section#send .container .row .right .controlgroup .control button.subutton {
+            width: 40% !important;
+            padding: 3% !important;
+            border: 0px !important;
+            outline: 0px !important; }
           body section#send .container .row .right .controlgroup .control .verification {
             width: 10px;
             height: 10px;
