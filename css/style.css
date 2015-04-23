@@ -288,6 +288,18 @@ body {
         display: inline-block; }
       body section#balance .container .row .balance {
         text-align: center; }
+        body section#balance .container .row .balance .maintenance {
+          background: url(../img/wrench.png) no-repeat;
+          background-size: 50px 50px;
+          background-position: center 0;
+          padding-top: 50px;
+          color: #F44336; }
+        body section#balance .container .row .balance .maintenance2 {
+          background: url(../img/wrench.png) no-repeat;
+          background-size: 37px 37px;
+          background-position: center 0;
+          padding-top: 42px;
+          color: #F44336; }
       body section#balance .container .coin-head {
         color: #999;
         padding-top: 30px;

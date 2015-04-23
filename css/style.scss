@@ -323,7 +323,23 @@ body {
 			h1 {line-height: 75%; margin: 3.5px 0 0;}
 			h1, h3 {display: inline-block;}
 			.row {
-				.balance {text-align: center;}
+				.balance {
+					text-align: center;
+					.maintenance {
+							background: url(../img/wrench.png) no-repeat;
+							background-size: 50px 50px;
+							background-position: center 0;
+							padding-top: 50px;
+							color: #F44336;
+						}
+					.maintenance2 {
+						background: url(../img/wrench.png) no-repeat;
+						background-size: 37px 37px;
+						background-position: center 0;
+						padding-top: 42px;
+						color: #F44336;
+					}
+				}
 			}
 			.coin-head {
 				color: #999;
@@ -350,6 +366,7 @@ body {
 				}
 			}
 		}
+
 	}
 
 	section#walletgroups {
