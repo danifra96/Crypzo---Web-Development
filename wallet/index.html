@@ -21,14 +21,30 @@
 				</a></h1>
 				<ul class="mainnav">
 					<li><a href="../index.html">Home</a></li>
-					<li><a href="">Wallet</a></li>
+					<li><a href="#">Wallet</a></li>
 					<li><a href="../aboutus/index.html">About us</a></li>
 				</ul>
 				<ul class="secnav">
 					<li><a href="../signin/index.html">Sign in</a></li>
 					<li><a href="../signup/index.html" class="signup">Sign up</a></li>
 				</ul>
+				<div class="hambutton">
+					<div class="linecont">
+						<div class="line top"></div>
+						<div class="line mid"></div>
+						<div class="line bot"></div>
+					</div>
+				</div>
 			</nav>
+			<script>
+				$(document).ready(function(){
+					$(".hambutton").click(function() {
+						$(".mainnav").toggleClass("openmenu");
+						$(".secnav").toggleClass("openmenu");
+						$(".hambutton").toggleClass("openmenu");
+					})
+				})
+			</script>
 		</header>
 		<section id="balance" class="section-block">
 			<div class="container addr">

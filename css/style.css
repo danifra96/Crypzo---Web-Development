@@ -84,8 +84,8 @@ body {
     transition: all .15s; }
   body header {
     background: #217eaa;
-    height: 80px;
-    padding: 17.5px 0 15px;
+    min-height: 85px;
+    padding: 20px 0 15px;
     width: 100% !important;
     display: inline-block;
     position: absolute;
@@ -94,12 +94,12 @@ body {
     z-index: 2;
     transition: all .15s; }
     body header nav {
-      height: 100%;
       padding: 0 20px; }
       body header nav a {
         padding: 10px 15px;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        display: inline-block; }
       body header nav h1 {
         height: 100%;
         display: inline-block;
@@ -107,9 +107,10 @@ body {
         font-size: 42px;
         line-height: 100%;
         color: #fff; }
+        body header nav h1 a {
+          padding: 0 15px !important; }
       body header nav ul.mainnav, body header nav ul.secnav {
         margin: 0 !important;
-        padding: 13px 0;
         display: inline-block;
         letter-spacing: 0.75px; }
         body header nav ul.mainnav li, body header nav ul.secnav li {
@@ -149,6 +150,51 @@ body {
         body header nav ul.secnav .signup:hover {
           border-color: #4fc3f7;
           transition: all .3s; }
+      body header nav .hambutton {
+        width: 85px;
+        height: 85px;
+        background: rgba(0, 0, 0, 0.1);
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer; }
+        body header nav .hambutton .linecont {
+          width: 45px;
+          height: 45px;
+          margin: 20px;
+          position: relative; }
+          body header nav .hambutton .linecont .line {
+            transition: all .3s;
+            display: block;
+            position: absolute;
+            background: #fff;
+            height: 5px;
+            width: 100%; }
+          body header nav .hambutton .linecont .top {
+            top: 0; }
+          body header nav .hambutton .linecont .mid {
+            top: 20px; }
+          body header nav .hambutton .linecont .bot {
+            top: 40px; }
+      body header nav .mainnav.openmenu {
+        margin-top: 15px !important; }
+      body header nav .secnav.openmenu {
+        border-bottom: 5px solid rgba(0, 0, 0, 0.1); }
+      body header nav .openmenu {
+        visibility: visible !important;
+        max-height: 300px !important;
+        transition: all .6s; }
+        body header nav .openmenu .linecont .top {
+          top: 20px;
+          transform: rotate(-45deg); }
+        body header nav .openmenu .linecont .mid {
+          visibility: hidden;
+          width: 0; }
+        body header nav .openmenu .linecont .bot {
+          top: 20px;
+          transform: rotate(45deg); }
   body footer {
     height: 250px;
     padding: 40px !important; }
@@ -511,49 +557,72 @@ body {
 
 /* Medias */
 @media (max-width: 1200px) {
-  /* Menu modifiers for mobile */
-  section#explanations .row div {
+  body section#explanations .row div {
     margin-bottom: 60px;
     padding: 0 !important; }
-
-  section#faq .row {
+  body section#faq .row {
     border-bottom: 0 !important;
     padding: 0 !important; }
-    section#faq .row h1 {
+    body section#faq .row h1 {
       margin-bottom: 30px !important; }
-    section#faq .row div {
+    body section#faq .row div {
       padding: 30px !important; }
-
-  section#balance .addr .coin .coin-logo {
+  body section#balance .addr .coin .coin-logo {
     width: 80px !important;
     margin: auto;
     display: block; }
-  section#balance .addr .coin h1 {
+  body section#balance .addr .coin h1 {
     display: none;
     visibility: hidden;
     width: 0; }
-  section#balance .contrbutton {
+  body section#balance .contrbutton {
     margin-bottom: 40px; }
-
-  section#send .subutton {
+  body section#send .subutton {
     margin: 20px 0 0 0; }
-
-  .subutton {
+  body .subutton {
     padding: 3% 2.6% !important; } }
 @media (max-width: 992px) {
-  section#send .row .left {
-    margin-bottom: 90px; }
-  section#send .row.sendbut {
-    padding-bottom: 45px; }
-    section#send .row.sendbut .backto {
-      font-size: 22px !important;
-      padding-left: 25px; }
-    section#send .row.sendbut .backto:before {
-      top: -12px !important;
-      font-size: 34px !important; }
-
-  section#send h2, section#transactions h2 {
-    font-size: 40px; } }
+  body {
+    /* Menu modifiers for mobile */ }
+    body section#send .row .left {
+      margin-bottom: 90px; }
+    body section#send .row.sendbut {
+      padding-bottom: 45px; }
+      body section#send .row.sendbut .backto {
+        font-size: 22px !important;
+        padding-left: 25px; }
+      body section#send .row.sendbut .backto:before {
+        top: -12px !important;
+        font-size: 34px !important; }
+    body section#send h2, body section#transactions h2 {
+      font-size: 40px; }
+    body header nav {
+      padding: 0 !important; }
+      body header nav ul.mainnav, body header nav ul.secnav {
+        display: block !important;
+        height: auto;
+        max-height: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.1);
+        transition: max-height .6s;
+        overflow: hidden; }
+        body header nav ul.mainnav li, body header nav ul.secnav li {
+          display: block !important;
+          margin: 0 35% !important;
+          font-size: 24px !important; }
+      body header nav ul.mainnav li:first-child {
+        padding-top: 13px; }
+      body header nav ul.mainnav li:last-child {
+        padding-bottom: 15px; }
+      body header nav ul.secnav {
+        float: none !important; }
+        body header nav ul.secnav li:last-child {
+          padding-bottom: 26px; }
+      body header nav .hambutton {
+        visibility: visible; } }
+@media (max-width: 768px) {
+  body header nav ul.mainnav li, body header nav ul.secnav li {
+    margin: 0 25% !important; } }
 /* Animations */
 @-webkit-keyframes in {
   0% {
