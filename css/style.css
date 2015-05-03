@@ -11,6 +11,7 @@ body {
   /* Sign up and signup */
   /* Wallet */
   /* Send */
+  /* Popups */
   /* Merchant */
   /* About us */
   /* FAQ */ }
@@ -112,7 +113,8 @@ body {
       body header nav ul.mainnav, body header nav ul.secnav {
         margin: 0 !important;
         display: inline-block;
-        letter-spacing: 0.75px; }
+        letter-spacing: 0.75px;
+        transition: all .6s; }
         body header nav ul.mainnav li, body header nav ul.secnav li {
           display: inline-block;
           font-size: 17px;
@@ -140,7 +142,7 @@ body {
           body header nav ul.mainnav li a:hover:before, body header nav ul.secnav li a:hover:before {
             width: 100%; }
       body header nav ul.secnav {
-        float: right !important; }
+        float: right; }
         body header nav ul.secnav .signup {
           border: 3px solid white;
           transition: all .3s;
@@ -151,8 +153,8 @@ body {
           border-color: #4fc3f7;
           transition: all .3s; }
       body header nav .hambutton {
-        width: 85px;
-        height: 85px;
+        width: 0;
+        height: 0;
         background: rgba(0, 0, 0, 0.1);
         display: block;
         visibility: hidden;
@@ -178,10 +180,6 @@ body {
             top: 20px; }
           body header nav .hambutton .linecont .bot {
             top: 40px; }
-      body header nav .mainnav.openmenu {
-        margin-top: 15px !important; }
-      body header nav .secnav.openmenu {
-        border-bottom: 5px solid rgba(0, 0, 0, 0.1); }
       body header nav .openmenu {
         visibility: visible !important;
         max-height: 300px !important;
@@ -505,34 +503,91 @@ body {
           body section#send .container .row .right .controlgroup .control .wrong {
             background-color: #F44336;
             transition: all .15s; }
-  body section#team #members {
+  body .container {
     width: 100%;
-    height: 80%;
-    background-color: #4fc3f7;
-    border-top: 5px solid rgba(0, 0, 0, 0.2); }
-    body section#team #members div {
-      display: block; }
-      body section#team #members div .person {
-        width: 180px;
-        height: 180px;
-        display: block;
-        margin: auto;
-        border-radius: 50%; }
-      body section#team #members div h2 {
-        font-size: 30px;
-        margin: 20px 0 5px;
-        color: #fff; }
-      body section#team #members div h3 {
-        margin: 0 0 15px;
-        font-weight: 600;
-        text-align: center; }
-      body section#team #members div p {
-        text-align: justify;
-        color: #222;
-        padding: 0 20px;
-        margin-bottom: 5px; }
-        body section#team #members div p b {
-          color: #aaa; }
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    margin-top: 90px; }
+    body .container .row {
+      margin: 0 !important;
+      padding: 0 30px; }
+      body .container .row .popup {
+        padding: 0px;
+        background: #f8f8f8;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+        body .container .row .popup .row {
+          padding: 20px; }
+        body .container .row .popup .pophead h2 {
+          margin: 0;
+          font-family: "Open Sans", sans-serif !important; }
+        body .container .row .popup .pophead button.close {
+          -webkit-appearance: none;
+          padding: 0;
+          cursor: pointer;
+          background: transparent;
+          border: 0; }
+        body .container .row .popup .pophead .close {
+          float: right;
+          font-size: 30px;
+          font-weight: bold;
+          line-height: .6;
+          color: #009688;
+          opacity: 1;
+          text-shadow: 0 0 0 transparent;
+          transition: all .15s; }
+        body .container .row .popup .pophead button.close:hover {
+          color: #008275;
+          transition: all .15s;
+          transform: rotate(90deg); }
+        body .container .row .popup .popbody form .control {
+          padding-bottom: 20px;
+          box-sizing: border-box; }
+          body .container .row .popup .popbody form .control h3 {
+            margin: 0;
+            font-size: 34px;
+            width: 20%;
+            display: inline-block;
+            padding: 0 15px; }
+          body .container .row .popup .popbody form .control .selecthold {
+            width: 20%;
+            height: 42px;
+            display: inline-block;
+            padding-right: 15px; }
+            body .container .row .popup .popbody form .control .selecthold select {
+              width: 100%;
+              height: 100%;
+              padding: 0 5px;
+              font-size: 20px; }
+            body .container .row .popup .popbody form .control .selecthold select:focus {
+              outline: -webkit-focus-ring-color auto 0px; }
+          body .container .row .popup .popbody form .control input {
+            height: 42px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: border-width .3s;
+            width: 50%;
+            display: inline-block; }
+          body .container .row .popup .popbody form .control input:focus {
+            border-bottom-color: #4fc3f7;
+            border-bottom-width: 3px;
+            transition: border-width .3s; }
+          body .container .row .popup .popbody form .control .actions {
+            width: 30%;
+            height: 42px;
+            padding: 0 15px;
+            display: inline-block; }
+            body .container .row .popup .popbody form .control .actions .subutton {
+              padding: 4.5px;
+              width: 100%; }
+        body .container .row .popup .popbody p {
+          font-size: 12px;
+          color: #bbb; }
+          body .container .row .popup .popbody p span {
+            line-height: 200%;
+            font-size: 14px; }
   body section#faq .container .row {
     margin: 0 30px !important;
     padding: 30px 0;
@@ -596,30 +651,40 @@ body {
         font-size: 34px !important; }
     body section#send h2, body section#transactions h2 {
       font-size: 40px; }
-    body header nav {
-      padding: 0 !important; }
-      body header nav ul.mainnav, body header nav ul.secnav {
-        display: block !important;
-        height: auto;
-        max-height: 0;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.1);
-        transition: max-height .6s;
-        overflow: hidden; }
-        body header nav ul.mainnav li, body header nav ul.secnav li {
+    body header {
+      padding-bottom: 0 !important; }
+      body header nav {
+        padding: 0 !important; }
+        body header nav ul.mainnav, body header nav ul.secnav {
           display: block !important;
-          margin: 0 35% !important;
-          font-size: 24px !important; }
-      body header nav ul.mainnav li:first-child {
-        padding-top: 13px; }
-      body header nav ul.mainnav li:last-child {
-        padding-bottom: 15px; }
-      body header nav ul.secnav {
-        float: none !important; }
-        body header nav ul.secnav li:last-child {
-          padding-bottom: 26px; }
-      body header nav .hambutton {
-        visibility: visible; } }
+          height: auto;
+          max-height: 0;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.1);
+          transition: max-height .6s, border-width .6s;
+          overflow: hidden; }
+          body header nav ul.mainnav li, body header nav ul.secnav li {
+            display: block !important;
+            margin: 0 35% !important;
+            font-size: 24px !important; }
+        body header nav ul.mainnav {
+          margin-top: 15px !important; }
+          body header nav ul.mainnav li:first-child {
+            padding-top: 13px; }
+          body header nav ul.mainnav li:last-child {
+            padding-bottom: 15px; }
+        body header nav ul.secnav {
+          width: 100%;
+          border-bottom: 0px solid rgba(0, 0, 0, 0.1); }
+          body header nav ul.secnav li:last-child {
+            padding-bottom: 26px; }
+        body header nav ul.secnav.openmenu {
+          border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+          transition: all .6s; }
+        body header nav .hambutton {
+          visibility: visible;
+          width: 85px;
+          height: 85px; } }
 @media (max-width: 768px) {
   body header nav ul.mainnav li, body header nav ul.secnav li {
     margin: 0 25% !important; } }

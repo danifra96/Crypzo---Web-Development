@@ -115,6 +115,7 @@ body {
 				margin: 0 !important;
 				display: inline-block;
 				letter-spacing: 0.75px;
+				transition: all .6s;
 				li {
 					display: inline-block;
 					font-size: 17px;
@@ -145,14 +146,14 @@ body {
 				}
 			}
 			ul.secnav {
-				float: right !important;
+				float: right;
 				.signup {border: 3px solid white; transition: all .3s; color: #fff !important;}
 				.signup:before {width: 0 !important;}
 				.signup:hover {border-color: $sec-color; transition: all .3s}
 			}
 			.hambutton {
-				width: 85px;
-				height: 85px;
+				width: 0;
+				height: 0;
 				background: rgba(0,0,0,.1);
 				display: block;
 				visibility: hidden;
@@ -177,8 +178,6 @@ body {
 					.bot {top: 40px;}
 				}
 			}
-			.mainnav.openmenu {margin-top: 15px !important;}
-			.secnav.openmenu {border-bottom: 5px solid rgba(0,0,0,.1);}
 			.openmenu {
 				visibility: visible !important;
 				max-height: 300px !important;
@@ -581,44 +580,114 @@ body {
 		}
 	}
 
-	/* Merchant */
+	/* Popups */
 
-	/* About us */
-	section#team {
-		#members {
-			width: 100%;
-			height: 80%;
-			background-color: $sec-color;
-			border-top: 5px solid rgba(0,0,0,.2);
-			div {
-				display: block;
-				.person {
-				width: 180px;
-				height: 180px;
-				display: block;
-				margin: auto;
-				border-radius: 50%;
+	.container {
+		  width: 100%;
+		  margin: 0;
+		  padding: 0;
+		  z-index: 1;
+		  margin-top: 90px;
+		.row {
+			margin: 0 !important;
+			padding: 0 30px;
+			.popup {
+				padding: 0px;
+				background: #f8f8f8;
+				border-radius: 10px;
+				box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+				.row {padding: 20px;}
+				.pophead {
+					h2 {margin: 0; font-family: $sec-font !important;}
+					button.close {
+						-webkit-appearance: none;
+						padding: 0;
+						cursor: pointer;
+						background: transparent;
+						border: 0;
+					}
+					.close {
+						float: right;
+						font-size: 30px;
+						font-weight: bold;
+						line-height: .6;
+						color: $detail-color;
+						opacity: 1;
+						text-shadow: 0 0 0 transparent;
+						transition: all .15s;
+					}
+					button.close:hover {
+						color: #008275;
+						transition: all .15s;
+						transform: rotate(90deg)
+					}
 				}
-				h2 {
-					font-size: 30px; 
-					margin: 20px 0 5px;
-					color: #fff;
-				}
-				h3 {
-					margin: 0 0 15px;
-					font-weight: 600;
-					text-align: center;
-				}
-				p {
-					text-align: justify;
-					color: #222;
-					padding: 0 20px;
-					margin-bottom: 5px;
-					b {color: #aaa;}
+				.popbody {
+					form {
+						.control {
+							padding-bottom: 20px;
+							box-sizing: border-box;
+							h3 {
+								margin: 0;
+								font-size: 34px;
+								width: 20%;
+								display: inline-block;
+								padding: 0 15px;
+							}
+							.selecthold {
+								width: 20%;
+								height: 42px;
+								display: inline-block;
+								padding-right: 15px;
+								select {
+									width: 100%;
+									height: 100%;
+									padding: 0 5px;
+									font-size: 20px;
+								}
+								select:focus {outline: -webkit-focus-ring-color auto 0px;}
+							}
+							input {
+								height: 42px;
+								padding: 10px;
+								border: 1px solid #ccc;
+								outline: none;
+								transition: border-width .3s;
+								width: 50%;
+								display: inline-block;
+							}
+							input:focus {
+								border-bottom-color: $sec-color;
+								border-bottom-width: 3px;
+								transition: border-width .3s;
+							}
+							.actions {
+								width: 30%;
+								height: 42px;
+								padding: 0 15px;
+								display: inline-block;
+								.subutton {
+									padding: 4.5px;
+
+									width: 100%;
+								}
+							}
+
+						}
+					}
+					p {
+						span {line-height: 200%; font-size: 14px;}
+						font-size: 12px;
+						color: #bbb;
+					}
 				}
 			}
 		}
 	}
+
+	/* Merchant */
+
+	/* About us */
 
 	/* FAQ */
 	section#faq {
@@ -723,6 +792,7 @@ body {
 	/* Menu modifiers for mobile */
 	
 		header {
+			padding-bottom: 0 !important;
 			nav {
 				padding: 0 !important;
 				ul.mainnav, ul.secnav {
@@ -731,7 +801,7 @@ body {
 					max-height: 0;
 					text-align: center;
 					background: rgba(0,0,0,.1);
-					transition: max-height .6s;
+					transition: max-height .6s, border-width .6s;
 					overflow: hidden;
 					li {
 						display: block !important;
@@ -740,14 +810,24 @@ body {
 					}
 				}
 				ul.mainnav {
+					margin-top: 15px !important;
 					li:first-child {padding-top: 13px;}
 					li:last-child {padding-bottom: 15px;}
 				}
 				ul.secnav {
-					float: none !important;
+					width: 100%;
+					border-bottom: 0px solid rgba(0,0,0,.1);
 					li:last-child {padding-bottom: 26px;}
 				}
-				.hambutton {visibility: visible;}
+				ul.secnav.openmenu {
+					border-bottom: 5px solid rgba(0,0,0,.1);
+					transition: all .6s;
+				}
+				.hambutton {
+					visibility: visible; 
+					width: 85px;
+					height: 85px;
+				}
 			}
 		}
 	}
