@@ -155,7 +155,7 @@ body {
 				width: 0;
 				height: 0;
 				background: rgba(0,0,0,.1);
-				display: block;
+				display: none;
 				visibility: hidden;
 				position: absolute;
 				top: 0; right: 0;
@@ -824,7 +824,8 @@ body {
 					transition: all .6s;
 				}
 				.hambutton {
-					visibility: visible; 
+					visibility: visible;
+					display: block;
 					width: 85px;
 					height: 85px;
 				}
