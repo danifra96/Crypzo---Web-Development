@@ -612,6 +612,9 @@ body {
 
 /* Medias */
 @media (max-width: 1200px) {
+  .container {
+    padding: 45px 0 !important; }
+
   body section#explanations .row div {
     margin-bottom: 60px;
     padding: 0 !important; }

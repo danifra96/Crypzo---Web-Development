@@ -721,6 +721,9 @@ body {
 
 /* Medias */
 @media (max-width: 1200px) {
+	.container {
+		padding: 45px 0 !important;
+	}
 	body {
 		section#explanations {
 			.row {
