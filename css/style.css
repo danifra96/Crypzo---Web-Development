@@ -368,6 +368,10 @@ body {
           background: #1CB4F4 !important; }
         body section#balance .container .coin div .address {
           word-break: break-all; }
+        body section#balance .container .coin .labelname h1 {
+          width: 0;
+          visibility: hidden;
+          display: none; }
   body section#walletgroups {
     background: #4fc3f7;
     padding-bottom: 0 !important;
@@ -475,8 +479,7 @@ body {
             padding: 10px;
             border: 1px solid #ccc;
             outline: none;
-            transition: border-width .3s; }
-          body section#send .container .row .right .controlgroup .control input, body section#send .container .row .right .controlgroup .control textarea {
+            transition: border-width .3s;
             width: 70%; }
           body section#send .container .row .right .controlgroup .control textarea {
             height: 100px; }
@@ -485,7 +488,7 @@ body {
             border-bottom-width: 3px;
             transition: border-width .3s; }
           body section#send .container .row .right .controlgroup .control button.subutton {
-            width: 40% !important;
+            width: 40%;
             padding: 3% !important;
             border: 0px !important;
             outline: 0px !important; }
@@ -503,6 +506,23 @@ body {
           body section#send .container .row .right .controlgroup .control .wrong {
             background-color: #F44336;
             transition: all .15s; }
+      body section#send .container .row .right .amount .control input {
+        width: 33%;
+        position: relative;
+        z-index: 1;
+        padding-left: 50px;
+        display: inline-block; }
+      body section#send .container .row .right .amount .control p {
+        position: absolute;
+        display: inline-block;
+        z-index: 2;
+        margin: 7px;
+        padding: 6px 4px;
+        line-height: 1;
+        color: #fff;
+        background: #4fc3f7; }
+      body section#send .container .row .right .amount .control input[name=amountcoin] {
+        margin-right: 4% !important; }
   body .container {
     width: 100%;
     margin: 0;
@@ -625,14 +645,6 @@ body {
       margin-bottom: 30px !important; }
     body section#faq .row div {
       padding: 30px !important; }
-  body section#balance .addr .coin .coin-logo {
-    width: 80px !important;
-    margin: auto;
-    display: block; }
-  body section#balance .addr .coin h1 {
-    display: none;
-    visibility: hidden;
-    width: 0; }
   body section#balance .contrbutton {
     margin-bottom: 40px; }
   body section#send .subutton {
@@ -642,10 +654,34 @@ body {
 @media (max-width: 992px) {
   body {
     /* Menu modifiers for mobile */ }
-    body section#send .row .left {
-      margin-bottom: 90px; }
+    body section#balance .labelname h1 {
+      width: 95% !important;
+      visibility: visible !important;
+      display: inline-block !important;
+      font-size: 20px;
+      color: #217eaa;
+      margin-top: 5px;
+      text-align: right; }
+    body section#send .row {
+      padding: 0; }
+      body section#send .row .left {
+        margin-bottom: 90px; }
+      body section#send .row .right {
+        border: solid rgba(0, 0, 0, 0.075);
+        border-width: 1px 0;
+        background: rgba(33, 126, 170, 0.15); }
+      body section#send .row .left, body section#send .row .right {
+        padding: 15px 45px; }
+      body section#send .row .amount {
+        margin-bottom: 80px !important; }
+      body section#send .row .control input[name=address] {
+        width: 90% !important; }
+      body section#send .row .control input[name=amountcoin], body section#send .row .control input[name=amounteur] {
+        width: 43% !important; }
+      body section#send .row .control button {
+        width: 90% !important; }
     body section#send .row.sendbut {
-      padding-bottom: 45px; }
+      padding: 0 45px 45px; }
       body section#send .row.sendbut .backto {
         font-size: 22px !important;
         padding-left: 25px; }

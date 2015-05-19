@@ -403,6 +403,13 @@ body {
 					a:hover {background: #1CB4F4 !important;}
 					.address {word-break: break-all;}
 				}
+				.labelname {
+					h1 {
+						width: 0;
+						visibility: hidden;
+						display: none;
+					}
+				}
 			}
 		}
 
@@ -548,8 +555,9 @@ body {
 								border: 1px solid #ccc;
 								outline: none;
 								transition: border-width .3s;
+								width: 70%;
 							}
-							input, textarea {width: 70%;}
+
 							textarea {height: 100px;}
 							input:focus, textarea:focus {
 								border-bottom-color: $sec-color;
@@ -557,7 +565,7 @@ body {
 								transition: border-width .3s;
 							}
 							button.subutton {
-								width: 40% !important;
+								width: 40%;
 								padding: 3% !important;
 								border: 0px !important;
 								outline: 0px !important;
@@ -573,6 +581,30 @@ body {
 							}
 							.right {background-color: #4CAF50; transition: all .15s;}
 							.wrong {background-color: #F44336; transition: all .15s;}
+						}
+					}
+					.amount {
+						.control {
+							input {
+								width: 33%;
+								position: relative;
+								z-index: 1;
+								padding-left: 50px;
+								display: inline-block;
+							}
+							p {
+								position: absolute;
+								display: inline-block;
+								z-index: 2;
+								margin: 7px;
+								padding: 6px 4px;
+								line-height: 1;
+								color: #fff;
+								background: $sec-color;
+							}
+							input[name=amountcoin] {
+								margin-right: 4% !important;
+							}
 						}
 					}
 				}
@@ -744,16 +776,6 @@ body {
 			}
 		}
 		section#balance {
-			.addr {
-				.coin {
-					.coin-logo {width: 80px !important; margin: auto; display: block;}
-					h1 {
-						display: none;
-						visibility: hidden;
-						width: 0;
-					}
-				}
-			}
 			.contrbutton {
 				margin-bottom: 40px;
 			}		
@@ -770,14 +792,39 @@ body {
 }
 @media (max-width: 992px) {
 	body {
+		section#balance {
+			.labelname {
+				h1 {
+					width: 95% !important;
+					visibility: visible !important;
+					display: inline-block !important;
+					font-size: 20px;
+					color: $main-color;
+					margin-top: 5px;
+					text-align: right;
+				}
+			}
+		}
+
 		section#send {
 			.row {
-				.left {
-					margin-bottom: 90px;
+				padding: 0;
+				.left {margin-bottom: 90px;}
+				.right {		
+					border: solid rgba(0,0,0,.075);
+					border-width: 1px 0;
+					background: rgba(33,126,170,.15);
+				}
+				.left, .right {padding: 15px 45px;}
+				.amount {margin-bottom: 80px !important;}
+				.control {
+					input[name=address] {width: 90% !important;}
+					input[name=amountcoin], input[name=amounteur] {width: 43% !important;}
+					button {width: 90% !important;}
 				}
 			}
 			.row.sendbut {
-				padding-bottom: 45px;
+				padding: 0 45px 45px;
 				.backto {
 					font-size: 22px !important;
 					padding-left: 25px;
